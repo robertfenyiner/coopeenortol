@@ -624,6 +624,7 @@
 }
 body {
   padding-top: 90px;
+  background: linear-gradient(#ffcccc, #ccffcc);
 }
 .hidden {
   display: none;
