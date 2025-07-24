@@ -1,11 +1,11 @@
-// Main JavaScript functionality for Fincomercio clone
+// Main JavaScript functionality for Coopeenortol site
 
 interface CarouselSlide {
   element: HTMLElement;
   index: number;
 }
 
-class FincomercioApp {
+class CoopeenortolApp {
   private currentSlide = 0;
   private slides: CarouselSlide[] = [];
   private dots: NodeListOf<HTMLElement> = document.querySelectorAll('.dot');
@@ -270,7 +270,7 @@ class FincomercioApp {
     `;
 
     modalContent.innerHTML = `
-      <h3>¡Hola! Soy Fincobot</h3>
+      <h3>¡Hola! Soy CoopeBot</h3>
       <p>¿En qué puedo ayudarte hoy?</p>
       <div style="margin: 1rem 0;">
         <button class="quick-option" data-option="credito">Información de créditos</button>
@@ -482,7 +482,7 @@ function showLoadingAnimation(): void {
   loader.innerHTML = `
     <div style="text-align: center; color: white;">
       <div style="width: 50px; height: 50px; border: 3px solid #ddc142; border-top: 3px solid transparent; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 1rem;"></div>
-      <p>Cargando Fincomercio...</p>
+      <p>Cargando Coopeenortol...</p>
     </div>
   `;
 
@@ -556,9 +556,9 @@ document.addEventListener('DOMContentLoaded', () => {
   setupSearch();
 
   // Initialize main app
-  new FincomercioApp();
+  new CoopeenortolApp();
 
-  console.log('Fincomercio clone loaded successfully! 🎉');
+  console.log('Coopeenortol site loaded successfully! 🎉');
 });
 
 // Form functionality
@@ -887,4 +887,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Export for potential module usage
-export { FincomercioApp };
+export { CoopeenortolApp };
