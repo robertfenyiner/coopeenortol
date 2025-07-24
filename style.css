@@ -16,15 +16,21 @@
   padding: 1rem 0;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .logo {
   display: flex;
   align-items: center;
-  height: 70px;
-  padding-left: 1rem;
+  justify-content: center;
+  height: 90px;
 }
 
 .logo img {
-  height: 64px;
+  height: 80px;
   width: auto;
   transition: height 0.3s;
 }
@@ -89,13 +95,32 @@
   gap: 1rem;
 }
 
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-input {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 0.4rem 0.8rem;
+  width: 220px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #ddc142;
+}
+
 .search-btn {
   background: #f5f5f5;
   border: 1px solid #ddd;
   cursor: pointer;
   color: #1e3466;
-  padding: 0.6rem 0.8rem;
-  border-radius: 50%;
+  padding: 0.5rem;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -385,17 +410,24 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .footer-logo img {
-  height: 50px;
-  margin-bottom: 1rem;
+  height: 60px;
 }
 
 .footer-social {
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 
 .footer-social img {
@@ -406,6 +438,10 @@
 
 .footer-social img:hover {
   opacity: 0.7;
+}
+
+.footer-info {
+  text-align: center;
 }
 
 .footer-info h3 {
@@ -437,8 +473,13 @@
   color: #ddc142;
 }
 
+.app-download {
+  text-align: center;
+}
+
 .app-buttons {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -459,6 +500,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 2rem 0;
+  justify-content: center;
 }
 
 .footer-partners img {
@@ -475,6 +517,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   padding-top: 2rem;
   border-top: 1px solid #2a4a7a;
 }
@@ -482,6 +525,7 @@
 .legal-links {
   display: flex;
   gap: 2rem;
+  justify-content: center;
 }
 
 .legal-links a {
@@ -559,6 +603,9 @@
     right: 10px;
     max-width: 220px;
     padding: 0.5rem;
+  }
+  .search-input {
+    width: 150px;
   }
   .footer {
     padding: 2rem 0 1rem;
