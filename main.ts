@@ -898,3 +898,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Export for potential module usage
 export { CoopeenortolApp };
+
+
+const menuBtn = document.querySelector('.menu-btn') as HTMLButtonElement;
+const navMenu = document.querySelector('.nav') as HTMLElement;
+
+if (menuBtn && navMenu) {
+  menuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+}

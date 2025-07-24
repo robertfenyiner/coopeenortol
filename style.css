@@ -30,32 +30,38 @@
 }
 
 .logo img {
-  height: 80px;
+  max-height: 65px;
   width: auto;
-  transition: height 0.3s;
 }
+
 
 .nav {
   display: flex;
-  gap: 2rem;
-  margin-left: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .nav-item {
-  position: relative;
-  cursor: pointer;
-  padding: 0.5rem 0.8rem;
-  color: #1e3466;
+  color: #1e3466; /* azul institucional */
   font-weight: 500;
   font-size: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 8px;
-  transition: background 0.2s, color 0.2s;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
 }
 
 .nav-item:hover {
-  background: #f5f5f5;
+  background: #f2f2f2;
   color: #ddc142;
 }
+
+.nav-item span {
+  white-space: nowrap;
+}
+
+
 
 .portal-btn {
   background: #1e3466;
@@ -96,36 +102,38 @@
 }
 
 .search-container {
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 0 0.3rem;
+  background: #fff;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  height: 40px;
 }
 
 .search-input {
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  padding: 0.4rem 0.8rem;
-  width: 220px;
-  transition: border-color 0.3s;
+  border: none;
+  padding: 0 1rem;
+  height: 100%;
+  width: 180px;
+  font-size: 0.95rem;
 }
 
 .search-input:focus {
   outline: none;
-  border-color: #ddc142;
 }
 
 .search-btn {
-  background: #f5f5f5;
-  border: 1px solid #ddd;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 8px;
   cursor: pointer;
-  color: #1e3466;
-  padding: 0.5rem;
-  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.3s, border 0.3s;
 }
+
 
 .search-btn:hover {
   background: #ddc142;
@@ -140,18 +148,16 @@
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #1e3466 0%, #2a4a7a 100%);
-  padding: 120px 0 60px;
-  position: relative;
-  overflow: hidden;
+  padding: 140px 20px 80px;
+  text-align: center;
 }
 
 .hero-content {
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .hero-text {
@@ -160,18 +166,12 @@
 }
 
 .hero-text h2 {
-  color: #fff;
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  font-weight: 400;
 }
 
 .hero-text h1 {
-  color: #fff;
-  font-size: 3.2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  line-height: 1.2;
+  font-size: 3rem;
 }
 
 .highlight {
@@ -179,11 +179,8 @@
 }
 
 .hero-cta {
-  background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(8px);
-  border-radius: 15px;
+  margin-top: 1.5rem;
   padding: 1.5rem;
-  margin-top: 2rem;
 }
 
 .hero-cta p {
@@ -555,15 +552,27 @@
 }
 
 /* RESPONSIVE */
+/* Responsive menu hidden by default */
 @media (max-width: 900px) {
-  .header-content {
+  .nav {
     flex-direction: column;
     align-items: flex-start;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    display: none;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 999;
   }
-  .nav {
-    gap: 1rem;
-    margin-left: 0;
+
+  .nav.show {
+    display: flex;
   }
+}
+
   .hero-content {
     flex-direction: column;
     gap: 2rem;
@@ -587,7 +596,9 @@
     padding: 0 10px;
   }
   .logo img {
-    height: 36px;
+  height: 80px !important;
+  max-height: unset;
+  width: auto;
   }
   .hero-text h1 {
     font-size: 2rem;
@@ -610,4 +621,71 @@
   .footer {
     padding: 2rem 0 1rem;
   }
+}
+body {
+  padding-top: 90px;
+}
+.hidden {
+  display: none;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  list-style: none;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu li a {
+  color: #1e3466;
+  text-decoration: none;
+  display: block;
+  padding: 0.4rem 0;
+}
+#open-chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ddc142;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: #ddc142;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 6px;
+  transition: background 0.3s ease;
+}
+
+.menu-btn:hover {
+  background: #c9b23a;
+}
+
+.menu-btn span {
+  display: block;
+  width: 22px;
+  height: 3px;
+  background: #1e3466;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
