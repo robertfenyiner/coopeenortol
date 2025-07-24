@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coopeenortol - Cooperativa de Ahorro y Crédito</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="img/logo-coopeenortol.png" alt="Coopeenortol">
+        </div>
+        <nav class="nav">
+          <div class="nav-item dropdown">
+            <span>Hazte asociado</span>
+          </div>
+          <div class="nav-item dropdown">
+            <span>Nuestra Cooperativa</span>
+          </div>
+          <div class="nav-item dropdown">
+            <span>Beneficios</span>
+          </div>
+          <div class="nav-item dropdown">
+            <span>Productos</span>
+          </div>
+          <div class="nav-item dropdown">
+            <span>Vinculación</span>
+          </div>
+          <div class="nav-item dropdown">
+            <span>Centro de pagos</span>
+          </div>
+          <div class="nav-item dropdown">
+            <span>Portal</span>
+          </div>
+          <div class="nav-item">
+            <span>Bre-B</span>
+          </div>
+        </nav>
+        <div class="header-actions">
+          <button class="search-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+          </button>
+          <button class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Chatbot -->
+  <div class="chatbot">
+    <div class="chatbot-content">
+      <img src="img/logo-coopeenortol.png" alt="CoopeBot">
+      <div class="chatbot-text">
+        <p>Hola, soy CoopeBot tu asesor virtual ¿Con quién tengo el gusto de hablar?</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-carousel">
+      <div class="hero-slide active">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>Valoramos cada esfuerzo que hiciste por llegar hasta aquí porque</h2>
+            <h1><span class="highlight">Después de todo</span></h1>
+            <h1>¡Vale todo!</h1>
+            <div class="hero-cta">
+              <p>Solicita tu crédito hasta por <strong>$250 millones</strong></p>
+              <p class="small">Tasa desde 1.26% N.M.V.</p>
+              <button class="cta-btn" onclick="openForm('credit-form')">Solicita tu crédito aquí</button>
+              <p class="terms">*Aplican términos y condiciones. Tasa sujeta a políticas de crédito.</p>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="https://ext.same-assets.com/1040442131/3976175512.jpeg" alt="Familia feliz">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-indicators">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- Product Cards -->
+  <!-- Aquí puedes agregar las tarjetas de productos con imágenes y colores de fondo -->
+  <section class="product-cards">
+    <div class="cards-container">
+      <div class="product-card" style="background: #1abc9c;">
+        <img src="img/persona1.jpg" alt="Joven universitario">
+        <h3>Crédito Universitario</h3>
+        <p>Apoya tu formación profesional con tasas preferenciales.</p>
+      </div>
+      <div class="product-card" style="background: #f1c40f;">
+        <img src="img/persona2.jpg" alt="Ahorro joven">
+        <h3>Ahorro Joven</h3>
+        <p>Comienza a ahorrar y construye tu futuro desde hoy.</p>
+      </div>
+      <div class="product-card" style="background: #3498db;">
+        <img src="img/persona3.jpg" alt="Crédito rápido">
+        <h3>Crédito Rápido</h3>
+        <p>Obtén tu crédito en minutos, fácil y seguro.</p>
+      </div>
+      <div class="product-card" style="background: #f7ca18;">
+        <img src="img/persona4.jpg" alt="Ahorro digital">
+        <h3>Ahorro Digital</h3>
+        <p>Administra tus ahorros desde nuestra app móvil.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Section -->
+  <!-- ...sin cambios... -->
+
+  <!-- News and Events -->
+  <section class="news-events">
+    <div class="container">
+      <h3>Celebra el mes del padre con Coopeenortol</h3>
+      <p>Participa en nuestras actividades especiales y gana premios.</p>
+      <h3>Festival de Navidad Coopeenortol</h3>
+      <p>Te esperamos en nuestra oficina principal para celebrar juntos.</p>
+      <div class="event-location">📍 Oficina Principal Coopeenortol</div>
+    </div>
+  </section>
+
+  <!-- Insurance Section -->
+  <!-- ...sin cambios... -->
+
+  <!-- Social Media Section -->
+  <section class="social-media">
+    <div class="container">
+      <div class="social-grid">
+        <!-- Facebook -->
+        <div class="social-section">
+          <h2>Facebook</h2>
+          <div class="facebook-post">
+            <img src="https://ext.same-assets.com/1040442131/1158208709.jpeg" alt="Facebook post">
+          </div>
+        </div>
+
+        <!-- Twitter -->
+        <div class="social-section">
+          <h2>Twitter</h2>
+          <p>Tweets by Coopeenortol</p>
+        </div>
+
+        <!-- Other Networks -->
+        <div class="social-section">
+          <h2>Otras redes</h2>
+          <div class="social-links">
+            <a href="#" class="social-link instagram">
+              <span>@coopeenortol</span>
+              <img src="https://ext.same-assets.com/1040442131/1206891663.svg" alt="Instagram">
+            </a>
+            <a href="#" class="social-link tiktok">
+              <span>@coopeenortol</span>
+              <img src="https://ext.same-assets.com/1040442131/950757076.svg" alt="TikTok">
+            </a>
+            <a href="#" class="social-link youtube">
+              <span>@coopeenortol</span>
+              <img src="https://ext.same-assets.com/1040442131/1012184359.svg" alt="YouTube">
+            </a>
+            <a href="#" class="social-link linkedin">
+              <span>Coopeenortol</span>
+              <img src="https://ext.same-assets.com/1040442131/2794482509.svg" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Forms Section -->
+  <!-- ...sin cambios... -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/logo-coopeenortol.png" alt="Coopeenortol">
+        </div>
+
+        <div class="footer-social">
+          <a href="#"><img src="https://ext.same-assets.com/1040442131/2530907104.svg" alt="Facebook"></a>
+          <a href="#"><img src="https://ext.same-assets.com/1040442131/3569340167.svg" alt="Twitter"></a>
+          <a href="#"><img src="https://ext.same-assets.com/1040442131/2613292666.svg" alt="Instagram"></a>
+          <a href="#"><img src="https://ext.same-assets.com/1040442131/2984905601.svg" alt="LinkedIn"></a>
+          <a href="#"><img src="https://ext.same-assets.com/1040442131/916076116.svg" alt="YouTube"></a>
+          <a href="#"><img src="https://ext.same-assets.com/1040442131/3205207868.svg" alt="TikTok"></a>
+        </div>
+
+        <div class="footer-info">
+          <div class="contact-info">
+            <h3>Línea Azul</h3>
+            <p><strong>Nacional:</strong> (601) 307 8330</p>
+            <p><strong>Lunes a viernes:</strong> 8:00 a.m. a 6:00 p.m.</p>
+            <p><strong>Sábados:</strong> 8:00 a.m. a 1:00 p.m.</p>
+            <p><strong>Línea Exclusiva de ventas:</strong> (601) 6651022</p>
+          </div>
+
+          <div class="office-info">
+            <h3>Nuestras oficinas</h3>
+            <h3>Oficina virtual</h3>
+          </div>
+
+          <div class="footer-links">
+            <h3>Links de interés</h3>
+            <ul>
+              <li><a href="#">Proceso de Reclamación de Fallecidos</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Mi Coopeenortol</a></li>
+              <li><a href="#">Solicitudes, quejas y reclamos</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="app-download">
+          <h3>Descarga nuestra app Coopeenortol Móvil</h3>
+          <div class="app-buttons">
+            <img src="https://ext.same-assets.com/1040442131/4212151310.png" alt="App Store">
+            <img src="https://ext.same-assets.com/1040442131/990302480.png" alt="Google Play">
+            <img src="https://ext.same-assets.com/1040442131/2978081231.png" alt="App Gallery">
+          </div>
+        </div>
+
+        <div class="footer-partners">
+          <img src="https://ext.same-assets.com/1040442131/1204332078.png" alt="Partner 1">
+          <img src="https://ext.same-assets.com/1040442131/1844427340.png" alt="Partner 2">
+          <img src="https://ext.same-assets.com/1040442131/329937547.png" alt="Partner 3">
+          <img src="https://ext.same-assets.com/1040442131/44030503.svg" alt="Partner 4">
+        </div>
+
+        <div class="footer-legal">
+          <div class="legal-links">
+            <a href="#">Condiciones de uso</a>
+            <a href="#">Términos y condiciones de campañas</a>
+            <a href="#">Privacidad de datos personales</a>
+          </div>
+          <div class="security-seal">
+            <button class="security-seal-btn">Coopeenortol Seguro</button>
+          </div>
+        </div>
+
+<div class="quick-access">
+  <h3>Servicios y Atención en Línea</h3>
+  <div class="quick-buttons">
+    <button class="quick-btn" onclick="alert('Redirigiendo al portal de pagos...')">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/></svg>
+      Pagos
+    </button>
+    <button class="quick-btn" onclick="window.open('https://wa.me/5715142323', '_blank')">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21.05 11.05a9 9 0 1 1-8.1-8.1"/><path d="M22 22l-5-5"/></svg>
+      WhatsApp
+    </button>
+    <button class="quick-btn" onclick="alert('Redirigiendo a la oficina virtual...')">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/></svg>
+      Oficina Virtual
+    </button>
+    <button class="quick-btn" onclick="openForm('contact-form')">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 13 7 8"/><line x1="12" y1="13" x2="12" y2="3"/></svg>
+      Contáctanos
+    </button>
+  </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
