@@ -450,13 +450,23 @@ class CoopeenortolApp {
 // Search functionality
 function setupSearch(): void {
   const searchBtn = document.querySelector('.search-btn');
-  if (!searchBtn) return;
+  const searchInput = document.querySelector('.search-input') as HTMLInputElement;
+  if (!searchBtn || !searchInput) return;
 
-  searchBtn.addEventListener('click', () => {
-    const searchTerm = prompt('¿Qué estás buscando?');
+  const runSearch = () => {
+    const searchTerm = searchInput.value.trim();
     if (searchTerm) {
-      // Simulate search
       alert(`Buscando: "${searchTerm}". Esta funcionalidad se integrará con el sistema de búsqueda.`);
+    } else {
+      searchInput.focus();
+    }
+  };
+
+  searchBtn.addEventListener('click', runSearch);
+  searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      runSearch();
     }
   });
 }
