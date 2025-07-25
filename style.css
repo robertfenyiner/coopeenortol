@@ -52,6 +52,10 @@
   white-space: nowrap;
 }
 
+.nav-item.dropdown {
+  position: relative;
+}
+
 .nav-item:hover {
   background: #f2f2f2;
   color: #ddc142;
